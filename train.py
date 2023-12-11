@@ -2,14 +2,10 @@ from dataset import *
 import os
 import argparse
 import torch.nn as nn
-from torchvision.models.detection import fasterrcnn_resnet50_fpn, FasterRCNN_ResNet50_FPN_Weights
-from torchvision import transforms
+from torchvision.models.detection import FasterRCNN_ResNet50_FPN_Weights
 import albumentations as A
-import cv2
 import numpy as np
-from PIL import Image
 from albumentations.pytorch import ToTensorV2
-import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 import torchvision
 from torch.utils.tensorboard import SummaryWriter
